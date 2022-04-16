@@ -1,9 +1,8 @@
 - hosts: all
   tasks: 
-	# tasks file for haproxy
-      - name: haproxy install
-	yum:	
-           name: 
-		- haproxy
-                - firewalld				
-           state: installed	
+    - name: haproxy install
+      yum:	
+         name:	
+           - haproxy
+           - firewalld				
+         state: installed	
